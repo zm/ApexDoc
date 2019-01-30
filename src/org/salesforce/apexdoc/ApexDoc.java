@@ -206,7 +206,7 @@ public class ApexDoc {
 
                 // ignore anything after // style comments. this allows hiding of tokens from ApexDoc.
                 int ich = strLine.indexOf("//");
-                if (ich > -1) {
+                if ((ich > -1) && !commentsStarted) {
                     strLine = strLine.substring(0, ich);
                 }
 

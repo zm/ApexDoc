@@ -180,7 +180,7 @@ public class FileManager {
                 escapeHTML(cModel.getNameLine()) + "</a></div>";
 
         if (cModel.getDescription() != "")
-            contents += "<div class='classDetails'>" + escapeHTML(cModel.getDescription());
+            contents += "<div class='classDetails'>" + cModel.getDescription();
         if (cModel.getAuthor() != "")
             contents += "<br/><br/>" + escapeHTML(cModel.getAuthor());
         if (cModel.getDate() != "")
